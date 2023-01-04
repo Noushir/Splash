@@ -1,0 +1,2 @@
+# Splash
+Bill Spliting App
