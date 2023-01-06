@@ -15,3 +15,7 @@ def sign_up(request):
 def dash(request):
     return render(request,'dash.html')
 
+
+def contact(request):
+    return render(request,'contact.html')
+
