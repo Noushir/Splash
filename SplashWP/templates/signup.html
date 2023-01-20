@@ -1,4 +1,38 @@
-{% extends 'base.html' %}
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block title %}SIGN-UP{% endblock %}
-{% block content %}Sign-Up Page{% endblock %}
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SPLASH | SignUp
+   </title>
+
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+   <link rel="stylesheet" href="{%static '/css/style.css'%}">
+</head>
+
+<body>
+
+   <form action="" class="form bg-glass" method ="post">
+   {% csrf_token %}
+         
+         <div class="logo-row">
+            
+            <img src="{%static '/images/SPLASH.png'%}" alt="logo" class="logo">
+           
+          </div>
+
+      
+      <input type="text" class="input bg-glass" placeholder="Username" name = "username" id="username">
+      <input type="email" class="input bg-glass" placeholder="E-mail Address" name="email" id="email">
+      <input type="password1" class="input bg-glass" placeholder="Password" name="password1" id="password1">
+      <input type="password2" class="input bg-glass" placeholder="Confirm Password" name = "password2" id="password2">
+      <button type="submit" class="button bg-glass">Register</button>
+      <p class="register">Already have an account? <a href="/login">Login</a></p>
+   </form>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #3F51B5;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+}
+
+
+nav a {
+  color: #3fa7b5;
+  text-decoration: none;
+
+  padding: 1em;
+}
+
+nav a:hover {
+  background-color: #3F51B5;
+  color: white;
+}
+
+  {
+  % comment %
+}
+
+.button {
+  background-color: #3F51B5;
+  color: white;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: white;
+  color: #3F51B5;
+}
